@@ -7,6 +7,7 @@ from db.models import Race, Skill, Player, Guild
 def main() -> None:
     with open("players.json", "r") as file:
         players_info = json.load(file)
+
     for nickname, user_info in players_info.items():
         race_obj, _ = Race.objects.get_or_create(
             name=user_info["race"]["name"],
