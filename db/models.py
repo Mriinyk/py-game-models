@@ -1,5 +1,4 @@
 from django.db import models # noqa: 401
-from django.forms.fields import CharField
 
 
 class Race(models.Model):
